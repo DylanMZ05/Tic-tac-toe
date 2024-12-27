@@ -1,8 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 const TURNS = {
   X: 'X',
   O: 'O',
@@ -26,12 +21,11 @@ function App() {
       {
         board.map((_, index) => {
           return (
-            <Square key={index}
-            index={index}
+            <Square 
+              key={index}
+              index={index}
             >
-              {index}
 
-              {board[index]}
             </Square>
           )
         })
